@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-
+    //Done by Diego
     TextView totalQuestionsTextView;
     TextView questionTextView;
     Button ansA, ansB, ansC, ansD;
