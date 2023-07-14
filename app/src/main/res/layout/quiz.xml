@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="367dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="This will be the question"
+            android:textAlignment="inherit"
+            android:textColor="#434343"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/choices_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/question"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Ans_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#434343"
+                android:textAllCaps="false"
+                android:text="Ans A"
+                android:textColor="#ECECEC" />
+
+            <Button
+                android:id="@+id/Ans_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#434343"
+                android:textAllCaps="false"
+                android:text="Ans B"
+                android:textColor="#ECECEC" />
+
+            <Button
+                android:id="@+id/Ans_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#434343"
+                android:textAllCaps="false"
+                android:text="Ans C"
+                android:textColor="#ECECEC" />
+
+            <Button
+                android:id="@+id/Ans_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="#434343"
+                android:textAllCaps="false"
+                android:text="Ans D"
+                android:textColor="#ECECEC" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/choices_layout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="87dp"
+            android:backgroundTint="#878CFF"
+            android:text="Submit"
+            android:textColor="#ECECEC" />
+
+    </RelativeLayout>
+
+</ScrollView>
